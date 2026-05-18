@@ -1,6 +1,8 @@
 NAME = "Милорадова Дарья"
 ROLE = "Начинающий Data Scientist"
-DESC = "Пишу pet-projects по классическим моделям машинного обучения"
+DESC = """Пишу pet-projects по классическим моделям машинного обучения.
+           Буду рада интересным совместным проектам.
+        """
 LINK_TG_CHANNEL = "https://t.me/DaryaMDK"
 LINK_GITHUB = "https://github.com/DaryaMDK"
 CONTACT_TG = "https://t.me/DaryaMDK"
@@ -23,25 +25,39 @@ def about_text():
         f"{DESC}\n\n"
         "🔗 <strong>Ссылки:</strong>\n"
         f'<a href="{LINK_TG_CHANNEL}">Telegram</a>\n'
-        f'<a href="{LINK_GITHUB}">GitHub</a>'
-        + footer()
+        f'<a href="{LINK_GITHUB}">GitHub</a>' + footer()
     )
 
 
 def projects_text():
-    return f"""<strong>Мои проекты:</strong>
-    
-    • <a href="https://github.com/DaryaMDK/otus_ui_tests">UI тесты на Python</a>
-    • <a href="https://github.com/DaryaMDK/codeceptjs_otus">Проект по тестированию на CodeceptJS</a>
-    • <a href="https://github.com/DaryaMDK/otus_playwright">Проект по тестированию на Playwright</a>
-{footer()}"""
+    return "\n".join(
+        [
+            "📁 <strong>Мои проекты:</strong>",
+            (
+                '• <a href="https://github.com/DaryaMDK/otus_ui_tests">'
+                "UI тесты на Python</a>"
+            ),
+            (
+                '• <a href="https://github.com/DaryaMDK/codeceptjs_otus">'
+                "Проект по тестированию на CodeceptJS</a>"
+            ),
+            (
+                '• <a href="https://github.com/DaryaMDK/otus_playwright">'
+                "Проект по тестированию на Playwright</a>"
+            ),
+            (
+                '• <a href="https://github.com/DaryaMDK/tg-bot">'
+                "Telegram bot с LLM на Python</a>"
+            ),
+            footer(),
+        ]
+    )
 
 
 def contacts_text():
     return (
-        "<strong>Контакты</strong>\n\n"
+        "📞 <strong>Контакты</strong>\n\n"
         f'Telegram: <a href="{CONTACT_TG}">Написать</a>\n'
         f"Email: <code>{CONTACT_EMAIL}</code>\n"
-        f"Phone: <code>{CONTACT_PHONE}</code>"
-        + footer()
+        f"Phone: <code>{CONTACT_PHONE}</code>" + footer()
     )
