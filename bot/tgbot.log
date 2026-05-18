@@ -1,0 +1,482 @@
+2026-05-17 17:58:57 | INFO     | aiogram.dispatcher | dispatcher.py:596 | Start polling
+2026-05-17 17:58:57 | INFO     | aiogram.dispatcher | dispatcher.py:378 | Run polling for bot @hedgehog_ds_bot id=8664059552 - 'mdk_bot'
+2026-05-17 17:59:02 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919102 is handled. Duration 280 ms by bot id=8664059552
+2026-05-17 17:59:05 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919103 is handled. Duration 79 ms by bot id=8664059552
+2026-05-17 17:59:09 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919104 is handled. Duration 94 ms by bot id=8664059552
+2026-05-17 17:59:12 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919105 is handled. Duration 77 ms by bot id=8664059552
+2026-05-17 17:59:15 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919106 is handled. Duration 109 ms by bot id=8664059552
+2026-05-17 17:59:16 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919107 is handled. Duration 78 ms by bot id=8664059552
+2026-05-17 18:00:23 | INFO     | aiogram.dispatcher | dispatcher.py:624 | Polling stopped
+2026-05-17 18:00:23 | ERROR    | aiogram.dispatcher | dispatcher.py:225 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-17 18:00:23 | WARNING  | aiogram.dispatcher | dispatcher.py:227 | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8664059552)
+2026-05-17 18:00:23 | INFO     | aiogram.dispatcher | dispatcher.py:413 | Polling stopped for bot @hedgehog_ds_bot id=8664059552 - 'mdk_bot'
+2026-05-17 18:00:43 | INFO     | aiogram.dispatcher | dispatcher.py:596 | Start polling
+2026-05-17 18:00:43 | INFO     | aiogram.dispatcher | dispatcher.py:378 | Run polling for bot @hedgehog_ds_bot id=8664059552 - 'mdk_bot'
+2026-05-17 18:00:48 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919109 is handled. Duration 187 ms by bot id=8664059552
+2026-05-17 18:00:51 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919110 is handled. Duration 139 ms by bot id=8664059552
+2026-05-17 18:02:39 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919111 is handled. Duration 77 ms by bot id=8664059552
+2026-05-17 18:02:42 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919112 is handled. Duration 94 ms by bot id=8664059552
+2026-05-17 18:03:00 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919113 is handled. Duration 78 ms by bot id=8664059552
+2026-05-17 18:03:04 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919114 is handled. Duration 93 ms by bot id=8664059552
+2026-05-17 18:03:06 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919115 is handled. Duration 61 ms by bot id=8664059552
+2026-05-17 18:03:11 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919116 is handled. Duration 125 ms by bot id=8664059552
+2026-05-17 18:03:13 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919117 is handled. Duration 110 ms by bot id=8664059552
+2026-05-17 18:04:43 | INFO     | aiogram.dispatcher | dispatcher.py:624 | Polling stopped
+2026-05-17 18:04:43 | ERROR    | aiogram.dispatcher | dispatcher.py:225 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-17 18:04:43 | WARNING  | aiogram.dispatcher | dispatcher.py:227 | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8664059552)
+2026-05-17 18:04:43 | INFO     | aiogram.dispatcher | dispatcher.py:413 | Polling stopped for bot @hedgehog_ds_bot id=8664059552 - 'mdk_bot'
+2026-05-17 18:04:47 | INFO     | aiogram.dispatcher | dispatcher.py:596 | Start polling
+2026-05-17 18:04:47 | INFO     | aiogram.dispatcher | dispatcher.py:378 | Run polling for bot @hedgehog_ds_bot id=8664059552 - 'mdk_bot'
+2026-05-17 18:04:51 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919118 is handled. Duration 188 ms by bot id=8664059552
+2026-05-17 18:04:53 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919119 is handled. Duration 140 ms by bot id=8664059552
+2026-05-17 18:04:59 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919120 is not handled. Duration 47 ms by bot id=8664059552
+2026-05-17 18:04:59 | ERROR    | aiogram.event | dispatcher.py:325 | Cause exception while process update id=352919120 by bot id=8664059552
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Empty attribute name in the tag "a" at byte offset 252
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 165, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 157, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 193, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 165, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 157, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 185, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\bot\app\handlers\projects.py", line 13, in show_projects
+    await message.answer(
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 504, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Empty attribute name in the tag "a" at byte offset 252
+2026-05-17 18:05:04 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919121 is handled. Duration 108 ms by bot id=8664059552
+2026-05-17 18:05:05 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919122 is handled. Duration 78 ms by bot id=8664059552
+2026-05-17 18:05:06 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919123 is not handled. Duration 47 ms by bot id=8664059552
+2026-05-17 18:05:06 | ERROR    | aiogram.event | dispatcher.py:325 | Cause exception while process update id=352919123 by bot id=8664059552
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Empty attribute name in the tag "a" at byte offset 252
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 165, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 157, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 193, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 165, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 157, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 185, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\bot\app\handlers\projects.py", line 13, in show_projects
+    await message.answer(
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 504, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Empty attribute name in the tag "a" at byte offset 252
+2026-05-17 18:05:22 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919124 is not handled. Duration 47 ms by bot id=8664059552
+2026-05-17 18:05:22 | ERROR    | aiogram.event | dispatcher.py:325 | Cause exception while process update id=352919124 by bot id=8664059552
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Empty attribute name in the tag "a" at byte offset 252
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 165, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 157, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 193, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 165, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 157, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 185, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\bot\app\handlers\projects.py", line 13, in show_projects
+    await message.answer(
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 504, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Empty attribute name in the tag "a" at byte offset 252
+2026-05-17 18:05:44 | INFO     | aiogram.dispatcher | dispatcher.py:624 | Polling stopped
+2026-05-17 18:05:44 | ERROR    | aiogram.dispatcher | dispatcher.py:225 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-17 18:05:44 | WARNING  | aiogram.dispatcher | dispatcher.py:227 | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8664059552)
+2026-05-17 18:05:44 | INFO     | aiogram.dispatcher | dispatcher.py:413 | Polling stopped for bot @hedgehog_ds_bot id=8664059552 - 'mdk_bot'
+2026-05-17 18:05:53 | INFO     | aiogram.dispatcher | dispatcher.py:596 | Start polling
+2026-05-17 18:05:53 | INFO     | aiogram.dispatcher | dispatcher.py:378 | Run polling for bot @hedgehog_ds_bot id=8664059552 - 'mdk_bot'
+2026-05-17 18:06:13 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919125 is handled. Duration 186 ms by bot id=8664059552
+2026-05-17 18:06:16 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919126 is handled. Duration 110 ms by bot id=8664059552
+2026-05-17 18:06:18 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919127 is handled. Duration 171 ms by bot id=8664059552
+2026-05-17 18:06:19 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919128 is handled. Duration 94 ms by bot id=8664059552
+2026-05-17 18:06:22 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919129 is handled. Duration 61 ms by bot id=8664059552
+2026-05-17 18:06:40 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919130 is not handled. Duration 62 ms by bot id=8664059552
+2026-05-17 18:06:40 | ERROR    | aiogram.event | dispatcher.py:325 | Cause exception while process update id=352919130 by bot id=8664059552
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Empty attribute name in the tag "a" at byte offset 252
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 165, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 157, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 193, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 165, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 157, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 185, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\bot\app\handlers\projects.py", line 13, in show_projects
+    await message.answer(
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 504, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Empty attribute name in the tag "a" at byte offset 252
+2026-05-17 18:07:59 | INFO     | aiogram.dispatcher | dispatcher.py:624 | Polling stopped
+2026-05-17 18:07:59 | ERROR    | aiogram.dispatcher | dispatcher.py:225 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-17 18:07:59 | WARNING  | aiogram.dispatcher | dispatcher.py:227 | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8664059552)
+2026-05-17 18:08:00 | INFO     | aiogram.dispatcher | dispatcher.py:413 | Polling stopped for bot @hedgehog_ds_bot id=8664059552 - 'mdk_bot'
+2026-05-17 18:08:26 | INFO     | aiogram.dispatcher | dispatcher.py:596 | Start polling
+2026-05-17 18:08:26 | INFO     | aiogram.dispatcher | dispatcher.py:378 | Run polling for bot @hedgehog_ds_bot id=8664059552 - 'mdk_bot'
+2026-05-17 18:08:29 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919131 is handled. Duration 157 ms by bot id=8664059552
+2026-05-17 18:08:30 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919132 is not handled. Duration 61 ms by bot id=8664059552
+2026-05-17 18:08:30 | ERROR    | aiogram.event | dispatcher.py:325 | Cause exception while process update id=352919132 by bot id=8664059552
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Empty attribute name in the tag "a" at byte offset 252
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 165, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 157, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 193, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 165, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 157, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 185, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\bot\app\handlers\projects.py", line 13, in show_projects
+    await message.answer(
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 504, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Empty attribute name in the tag "a" at byte offset 252
+2026-05-17 18:08:34 | INFO     | aiogram.dispatcher | dispatcher.py:624 | Polling stopped
+2026-05-17 18:08:34 | ERROR    | aiogram.dispatcher | dispatcher.py:225 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-17 18:08:34 | WARNING  | aiogram.dispatcher | dispatcher.py:227 | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8664059552)
+2026-05-17 18:08:34 | INFO     | aiogram.dispatcher | dispatcher.py:413 | Polling stopped for bot @hedgehog_ds_bot id=8664059552 - 'mdk_bot'
+2026-05-17 18:09:02 | INFO     | aiogram.dispatcher | dispatcher.py:596 | Start polling
+2026-05-17 18:09:02 | INFO     | aiogram.dispatcher | dispatcher.py:378 | Run polling for bot @hedgehog_ds_bot id=8664059552 - 'mdk_bot'
+2026-05-17 18:09:11 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919133 is handled. Duration 188 ms by bot id=8664059552
+2026-05-17 18:09:13 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919134 is handled. Duration 108 ms by bot id=8664059552
+2026-05-17 18:09:25 | INFO     | aiogram.dispatcher | dispatcher.py:624 | Polling stopped
+2026-05-17 18:09:25 | ERROR    | aiogram.dispatcher | dispatcher.py:225 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-17 18:09:25 | WARNING  | aiogram.dispatcher | dispatcher.py:227 | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8664059552)
+2026-05-17 18:09:26 | INFO     | aiogram.dispatcher | dispatcher.py:413 | Polling stopped for bot @hedgehog_ds_bot id=8664059552 - 'mdk_bot'
+2026-05-17 18:09:30 | INFO     | aiogram.dispatcher | dispatcher.py:596 | Start polling
+2026-05-17 18:09:30 | INFO     | aiogram.dispatcher | dispatcher.py:378 | Run polling for bot @hedgehog_ds_bot id=8664059552 - 'mdk_bot'
+2026-05-17 18:09:36 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919135 is handled. Duration 186 ms by bot id=8664059552
+2026-05-17 18:09:43 | INFO     | app.handlers.llm_chat | llm_chat.py:23 | User 803059752 started LLM chat
+2026-05-17 18:09:43 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919136 is handled. Duration 77 ms by bot id=8664059552
+2026-05-17 18:10:09 | INFO     | app.handlers.llm_chat | llm_chat.py:42 | Sending request to Ollama: зачем изучать python&
+2026-05-17 18:10:17 | INFO     | httpx | _client.py:1740 | HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-17 18:10:17 | INFO     | app.handlers.llm_chat | llm_chat.py:48 | Received response from Ollama
+2026-05-17 18:10:17 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919137 is handled. Duration 8516 ms by bot id=8664059552
+2026-05-17 18:10:33 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919138 is handled. Duration 94 ms by bot id=8664059552
+2026-05-17 18:10:37 | INFO     | app.handlers.llm_chat | llm_chat.py:23 | User 803059752 started LLM chat
+2026-05-17 18:10:37 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919139 is handled. Duration 61 ms by bot id=8664059552
+2026-05-17 18:10:54 | INFO     | app.handlers.llm_chat | llm_chat.py:42 | Sending request to Ollama: чем хорош python?
+2026-05-17 18:11:00 | INFO     | httpx | _client.py:1740 | HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-17 18:11:00 | INFO     | app.handlers.llm_chat | llm_chat.py:48 | Received response from Ollama
+2026-05-17 18:11:00 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919140 is handled. Duration 6250 ms by bot id=8664059552
+2026-05-17 18:11:20 | INFO     | app.handlers.llm_chat | llm_chat.py:42 | Sending request to Ollama: а какие минусы?
+2026-05-17 18:11:22 | INFO     | httpx | _client.py:1740 | HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-17 18:11:22 | INFO     | app.handlers.llm_chat | llm_chat.py:48 | Received response from Ollama
+2026-05-17 18:11:22 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919141 is handled. Duration 1578 ms by bot id=8664059552
+2026-05-17 18:11:33 | INFO     | app.handlers.llm_chat | llm_chat.py:42 | Sending request to Ollama: exit
+2026-05-17 18:11:34 | INFO     | httpx | _client.py:1740 | HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-17 18:11:34 | INFO     | app.handlers.llm_chat | llm_chat.py:48 | Received response from Ollama
+2026-05-17 18:11:34 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919142 is handled. Duration 1609 ms by bot id=8664059552
+2026-05-17 18:11:45 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919143 is handled. Duration 125 ms by bot id=8664059552
+2026-05-17 18:13:31 | INFO     | aiogram.dispatcher | dispatcher.py:624 | Polling stopped
+2026-05-17 18:13:31 | ERROR    | aiogram.dispatcher | dispatcher.py:225 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-17 18:13:31 | WARNING  | aiogram.dispatcher | dispatcher.py:227 | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8664059552)
+2026-05-17 18:13:32 | INFO     | aiogram.dispatcher | dispatcher.py:413 | Polling stopped for bot @hedgehog_ds_bot id=8664059552 - 'mdk_bot'
+2026-05-18 10:50:26 | INFO     | aiogram.dispatcher | dispatcher.py:596 | Start polling
+2026-05-18 10:50:26 | INFO     | aiogram.dispatcher | dispatcher.py:378 | Run polling for bot @hedgehog_ds_bot id=8664059552 - 'mdk_bot'
+2026-05-18 10:50:33 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919144 is handled. Duration 186 ms by bot id=8664059552
+2026-05-18 10:50:34 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919145 is handled. Duration 94 ms by bot id=8664059552
+2026-05-18 10:50:48 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919146 is handled. Duration 78 ms by bot id=8664059552
+2026-05-18 10:50:55 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919147 is handled. Duration 78 ms by bot id=8664059552
+2026-05-18 10:51:00 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919148 is handled. Duration 78 ms by bot id=8664059552
+2026-05-18 10:51:06 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919149 is handled. Duration 78 ms by bot id=8664059552
+2026-05-18 10:51:09 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919150 is handled. Duration 93 ms by bot id=8664059552
+2026-05-18 10:51:14 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919151 is handled. Duration 93 ms by bot id=8664059552
+2026-05-18 10:53:39 | INFO     | app.handlers.llm_chat | llm_chat.py:23 | User 803059752 started LLM chat
+2026-05-18 10:53:39 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919152 is handled. Duration 125 ms by bot id=8664059552
+2026-05-18 10:53:51 | INFO     | app.handlers.llm_chat | llm_chat.py:42 | Sending request to Ollama: Для нужен python?
+2026-05-18 10:53:58 | INFO     | httpx | _client.py:1740 | HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-18 10:53:58 | INFO     | app.handlers.llm_chat | llm_chat.py:48 | Received response from Ollama
+2026-05-18 10:53:58 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919153 is handled. Duration 7140 ms by bot id=8664059552
+2026-05-18 10:54:31 | INFO     | app.handlers.llm_chat | llm_chat.py:42 | Sending request to Ollama: а анализ данных для чего нужен?
+2026-05-18 10:54:38 | INFO     | httpx | _client.py:1740 | HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-18 10:54:38 | INFO     | app.handlers.llm_chat | llm_chat.py:48 | Received response from Ollama
+2026-05-18 10:54:38 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919154 is handled. Duration 6609 ms by bot id=8664059552
+2026-05-18 10:58:19 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919155 is handled. Duration 93 ms by bot id=8664059552
+2026-05-18 10:58:45 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919156 is handled. Duration 78 ms by bot id=8664059552
+2026-05-18 10:59:03 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919157 is handled. Duration 172 ms by bot id=8664059552
+2026-05-18 10:59:05 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919158 is handled. Duration 78 ms by bot id=8664059552
+2026-05-18 10:59:24 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919159 is handled. Duration 93 ms by bot id=8664059552
+2026-05-18 11:00:09 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919160 is handled. Duration 93 ms by bot id=8664059552
+2026-05-18 11:00:16 | INFO     | app.handlers.llm_chat | llm_chat.py:23 | User 1373045360 started LLM chat
+2026-05-18 11:00:16 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919161 is handled. Duration 110 ms by bot id=8664059552
+2026-05-18 11:00:46 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919162 is handled. Duration 77 ms by bot id=8664059552
+2026-05-18 11:00:53 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919163 is handled. Duration 61 ms by bot id=8664059552
+2026-05-18 11:01:12 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919164 is handled. Duration 63 ms by bot id=8664059552
+2026-05-18 11:01:56 | INFO     | app.handlers.llm_chat | llm_chat.py:23 | User 1373045360 started LLM chat
+2026-05-18 11:01:56 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919165 is handled. Duration 93 ms by bot id=8664059552
+2026-05-18 11:02:39 | INFO     | app.handlers.llm_chat | llm_chat.py:42 | Sending request to Ollama: Кто здесь?
+2026-05-18 11:02:41 | INFO     | httpx | _client.py:1740 | HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-18 11:02:41 | INFO     | app.handlers.llm_chat | llm_chat.py:48 | Received response from Ollama
+2026-05-18 11:02:41 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919166 is handled. Duration 2140 ms by bot id=8664059552
+2026-05-18 11:03:50 | INFO     | app.handlers.llm_chat | llm_chat.py:42 | Sending request to Ollama: Что такое магнитная буря?
+2026-05-18 11:03:52 | INFO     | httpx | _client.py:1740 | HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-18 11:03:52 | INFO     | app.handlers.llm_chat | llm_chat.py:48 | Received response from Ollama
+2026-05-18 11:03:52 | INFO     | aiogram.event | dispatcher.py:178 | Update id=352919167 is handled. Duration 1281 ms by bot id=8664059552
+2026-05-18 11:06:16 | INFO     | aiogram.dispatcher | dispatcher.py:624 | Polling stopped
+2026-05-18 11:06:16 | ERROR    | aiogram.dispatcher | dispatcher.py:225 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-18 11:06:16 | WARNING  | aiogram.dispatcher | dispatcher.py:227 | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8664059552)
+2026-05-18 11:06:17 | INFO     | aiogram.dispatcher | dispatcher.py:413 | Polling stopped for bot @hedgehog_ds_bot id=8664059552 - 'mdk_bot'
