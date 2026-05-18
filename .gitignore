@@ -79,3 +79,5 @@ cython_debug/
 .ruff_cache/
 .pypirc
 .streamlit/secrets.toml
+
+tgbot.log
